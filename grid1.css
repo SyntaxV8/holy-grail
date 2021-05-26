@@ -1,0 +1,57 @@
+body {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  margin: 0px;
+}
+
+header {
+  border-style: solid;
+  border-color: white;
+  border-width: 5px;
+  text-align: center;
+}
+
+a {
+  color: white;
+}
+
+footer {
+  text-align: center;
+  font-size: xx-small;
+}
+
+@media only screen and (min-width: 800px) {
+
+  #container {
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-rows: auto 5fr auto;
+    grid-template-areas:
+      "title title title"
+    "nav main pic"
+    "foot foot foot";
+    grid-column-gap: 25px;
+  }
+
+  #headerstyle {
+    grid-area: title;
+  }
+
+  #grid1 {
+    grid-area: nav;
+  }
+
+  #grid2 {
+    grid-area: main;
+  }
+
+  #grid3 {
+    align-self: center;
+    grid-area: pic;
+  }
+
+  #foot {
+    grid-area: foot;
+  }
+}

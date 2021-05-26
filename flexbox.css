@@ -1,0 +1,47 @@
+body {
+  background-color: black;
+  color: white;
+  width: auto;
+  margin-right: 14px;
+}
+header {
+  width: 100%;
+  border-style: solid;
+  border-color: white;
+  border-width: 5px;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  font-size: xx-small;
+}
+
+a {
+  color: white;
+}
+
+@media only screen and (min-width: 800px) {
+
+  #container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  #flex1 {
+    flex-shrink: 5;
+  }
+
+  #flex2 {
+    flex-shrink: 10;
+    margin-right: 50px;
+  }
+
+  #flex3 {
+    flex-shrink: 20;
+    align-content: center;
+    align-self: center;
+  }
+}
